@@ -2,8 +2,8 @@
 一行代码解决无数据时提示用户，支持文字，图片，Gif动画
 
 ## 使用方法
-### 1.先拉入Category文件夹中的两个分类文件到项目中
-### 2.然后导入分类头文件 "UIViewController+HUD.h" 
+### 一.先拉入Category文件夹中的两个分类文件到项目中
+### 二.然后导入分类头文件 "UIViewController+HUD.h" 
 #### 1.文字提醒
  ```
   [self showStatus:@"没有数据哦！" tapViewWithBlock:^{
