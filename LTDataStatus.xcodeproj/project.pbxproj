@@ -13,6 +13,10 @@
 		FBDFC2541DB859A800173221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDFC2521DB859A800173221 /* Main.storyboard */; };
 		FBDFC2561DB859A800173221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDFC2551DB859A800173221 /* Assets.xcassets */; };
 		FBDFC2591DB859A800173221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDFC2571DB859A800173221 /* LaunchScreen.storyboard */; };
+		FBDFC26B1DB85A2D00173221 /* UIImage+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDFC2681DB85A2D00173221 /* UIImage+Gif.m */; };
+		FBDFC26C1DB85A2D00173221 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDFC26A1DB85A2D00173221 /* UIViewController+HUD.m */; };
+		FBDFC2701DB85A5F00173221 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBDFC26F1DB85A5F00173221 /* gif.gif */; };
+		FBDFC2721DB85F1B00173221 /* no_data.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBDFC2711DB85F1B00173221 /* no_data.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		FBDFC2551DB859A800173221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDFC2581DB859A800173221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBDFC25A1DB859A800173221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDFC2671DB85A2D00173221 /* UIImage+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gif.h"; sourceTree = "<group>"; };
+		FBDFC2681DB85A2D00173221 /* UIImage+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gif.m"; sourceTree = "<group>"; };
+		FBDFC2691DB85A2D00173221 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		FBDFC26A1DB85A2D00173221 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		FBDFC26F1DB85A5F00173221 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		FBDFC2711DB85F1B00173221 /* no_data.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_data.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,11 @@
 		FBDFC2481DB859A800173221 /* LTDataStatus */ = {
 			isa = PBXGroup;
 			children = (
+				FBDFC2661DB85A2D00173221 /* Category */,
 				FBDFC24C1DB859A800173221 /* AppDelegate.h */,
 				FBDFC24D1DB859A800173221 /* AppDelegate.m */,
+				FBDFC2711DB85F1B00173221 /* no_data.jpg */,
+				FBDFC26F1DB85A5F00173221 /* gif.gif */,
 				FBDFC24F1DB859A800173221 /* ViewController.h */,
 				FBDFC2501DB859A800173221 /* ViewController.m */,
 				FBDFC2521DB859A800173221 /* Main.storyboard */,
@@ -77,6 +90,17 @@
 				FBDFC24A1DB859A800173221 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBDFC2661DB85A2D00173221 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FBDFC2671DB85A2D00173221 /* UIImage+Gif.h */,
+				FBDFC2681DB85A2D00173221 /* UIImage+Gif.m */,
+				FBDFC2691DB85A2D00173221 /* UIViewController+HUD.h */,
+				FBDFC26A1DB85A2D00173221 /* UIViewController+HUD.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBDFC2591DB859A800173221 /* LaunchScreen.storyboard in Resources */,
+				FBDFC2721DB85F1B00173221 /* no_data.jpg in Resources */,
 				FBDFC2561DB859A800173221 /* Assets.xcassets in Resources */,
 				FBDFC2541DB859A800173221 /* Main.storyboard in Resources */,
+				FBDFC2701DB85A5F00173221 /* gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDFC26B1DB85A2D00173221 /* UIImage+Gif.m in Sources */,
 				FBDFC2511DB859A800173221 /* ViewController.m in Sources */,
 				FBDFC24E1DB859A800173221 /* AppDelegate.m in Sources */,
+				FBDFC26C1DB85A2D00173221 /* UIViewController+HUD.m in Sources */,
 				FBDFC24B1DB859A800173221 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
