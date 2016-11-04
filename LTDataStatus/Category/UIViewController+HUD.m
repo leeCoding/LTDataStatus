@@ -106,7 +106,6 @@ static const void *kProTapG = @"k_Pro_TapG";
 - (void)hide {
     
     if (self.labelHud) {
-
         /* 动画
         __weak typeof(self) __weakSelf = self;
         [UIView animateWithDuration:1 animations:^{
