@@ -89,6 +89,10 @@ static const void *kProTapG = @"k_Pro_TapG";
 /* 添加点击手势 */
 - (void)addTapGesture {
     
+    if (self.tapGestureBlock) {
+        [self show];
+        return;
+    }
     // 添加全屏手势
     self.tapGestureBlock = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapBlock)];
     [self.view addGestureRecognizer:self.tapGestureBlock];
@@ -102,26 +106,34 @@ static const void *kProTapG = @"k_Pro_TapG";
     }
 }
 
+#pragma mark - 显示 Tips show
+- (void)show {
+    
+    self.labelHud.hidden = NO;
+    UIImageView *imageView = [self.view viewWithTag:10086];
+    imageView.hidden = NO;
+    [self.view addGestureRecognizer: self.tapGestureBlock];
+    
+}
+
 #pragma mark - 消失 Tips hide
 - (void)hide {
     
     if (self.labelHud) {
         /* 动画
-        __weak typeof(self) __weakSelf = self;
-        [UIView animateWithDuration:1 animations:^{
-            __weakSelf.labelHud.alpha = 0;
-        } completion:^(BOOL finished) {
-            [__weakSelf.labelHud removeFromSuperview];
-        }];
-        */
+         __weak typeof(self) __weakSelf = self;
+         [UIView animateWithDuration:1 animations:^{
+         __weakSelf.labelHud.alpha = 0;
+         } completion:^(BOOL finished) {
+         [__weakSelf.labelHud removeFromSuperview];
+         }];
+         */
         
-        [self.labelHud removeFromSuperview];
+        self.labelHud.hidden = YES;
     }
     
     UIImageView *imageView = [self.view viewWithTag:10086];
-    if (imageView) {
-        [imageView removeFromSuperview];
-    }
+    imageView.hidden = YES;
     [self.view removeGestureRecognizer: self.tapGestureBlock];
 }
 
